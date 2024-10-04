@@ -64,10 +64,11 @@ header {
 }
 
 #menu-icon {
-  font-size: 40px;
-  color: var(--main-color);
+  font-size: 42px;
+  color: var(--text-color);
   z-index: 10001;
   cursor: pointer;
+  display: none;
 }
 
 section {
@@ -185,9 +186,10 @@ span {
 }
 
 .service-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
-  gap: 5rem;
+  gap: 2.2rem;
   text-align: center;
   margin-top: 4rem;
   flex-direction: column;
@@ -200,20 +202,20 @@ span {
   transition: all ease 0.5s;
 }
 
-.service-container {
+/* .service-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3em;
-}
+} */
 
-/* .service-box {
+.service-box {
   padding: 45px 30px;
   background-color: var(--bg-color);
   border-radius: 0.8rem;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all ease 0.5s;
-} */
+}
 
 .service i {
   font-size: 50px;
@@ -424,13 +426,14 @@ span {
     margin: auto;
   }
 }
+
 @media (max-width: 870px) {
   #menu-icon {
     display: block;
   }
   .navlist {
     position: absolute;
-    top: 100%;
+    top: -800px;
     right: 0;
     left: 0;
     display: flex;
@@ -447,5 +450,44 @@ span {
   }
   .navlist.open {
     top: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .home {
+    min-height: 80vh;
+  }
+  :root {
+    --h1-font: 3.8rem;
+    --h2-font: 2.7rem;
+    --p-font: 15px;
+  }
+  .hero-text h4 {
+    font-size: 18px;
+    word-spacing: 10px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    padding: 10px 35px;
+  }
+  .left-contact {
+    gap: 3rem;
+  }
+  .in i {
+    font-size: 80px;
+  }
+  .in h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  :root {
+    --h1-font: 3.5rem;
+    --h2-font: 2.5rem;
+  }
+  .hero-text h4 {
+    font-size: 16px;
+    word-spacing: 7px;
   }
 }
