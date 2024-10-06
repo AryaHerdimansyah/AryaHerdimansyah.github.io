@@ -44,7 +44,7 @@ header {
 }
 
 .logo img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -87,13 +87,13 @@ section {
   justify-content: flex-start;
 }
 
-/* .hero-text h3 {
+.hero-text h3 {
   color: var(--second-color);
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
   word-spacing: 10px;
-} */
+}
 
 .hero-text h1 {
   font-family: "Dosis", sans-serif;
@@ -102,88 +102,6 @@ section {
   font-size: 70px;
   margin-bottom: 20px;
   letter-spacing: 2px;
-}
-
-.text-animation {
-  font-size: 34px;
-  font-weight: 600;
-  min-width: 280px;
-}
-
-.text-animation span {
-  position: relative;
-}
-
-.text-animation span::before {
-  content: "Web Developer";
-  color: var(--main-color);
-  animation: words 20s infinite;
-}
-
-.text-animation span::after {
-  content: "";
-  background-color: var(--bg-color);
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  border-left: 3px solid var(--bg-color);
-  right: -8px;
-  animation: cursor 0.6s infinite, typing 20s steps(14 infinite);
-}
-
-@keyframes cursor {
-  to{
-    border-left: 2px solid var(--main-color);
-  }
-}
-
-@keyframes words {
-  0%,
-  20%{
-    content: "Frontend Developer";
-  }
-  21%,
-  40%{
-    content: "Web Developer";
-  }
-  41%,
-  60%{
-    content: "Backend Developer";
-  }
-  61%,
-  80%{
-    content: "Web Desaigner";
-  }
-  81%,
-  100%{
-    content: "Software Tester";
-  }
-}
-
-@keyframes typing {
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95%{
-    width: 0;
-  }
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85%{
-    width: calc(100% + 8px);
-  }
 }
 
 .hero-text h4 {
@@ -196,6 +114,7 @@ section {
 
 .btn {
   display: inline-block;
+  margin-top: 15px;
   padding: 16px 40px;
   background: var(--main-color);
   color: var(--text-color);

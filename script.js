@@ -17,6 +17,7 @@ window.onscroll = () => {
   navlist.classList.remove("open");
 };
 
+// <!--scroll reveral-->
 const sr = ScrollReveal({
   distance: '40px',
   duration: 2050,
