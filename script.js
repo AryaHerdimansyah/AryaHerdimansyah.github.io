@@ -32,3 +32,11 @@ sr.reveal('.left-contact', { origin: 'left' });
 sr.reveal('.right-contact', { origin: 'right' });
 sr.reveal('.end-section', { origin: 'top' });
 
+// <!--Typing Teks-->
+// const typed = new typed('.multiple-text', {
+//   Strings: ['Frontend Developer','Web Desaigner','Backend Developer'],
+//   typeSpeed: 70,
+//   backSpeed: 70,
+//   backDelay: 1000,
+//   loop: true,
+// });
