@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -23,6 +24,7 @@
   --p-font: 1.1rem;
 }
 
+/*--- Index.hmtl --- */
 body {
   color: var(--text-color);
   background: var(--bg-color);
@@ -525,3 +527,5 @@ span {
     word-spacing: 7px;
   }
 }
+
+
